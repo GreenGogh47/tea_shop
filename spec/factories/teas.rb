@@ -2,9 +2,9 @@
 
 FactoryBot.define do
   factory :tea do
-    title { "MyString" }
-    description { "MyString" }
-    temperature { "MyString" }
-    brew_time { "MyString" }
+    title { Faker::Tea.variety }
+    description { Faker::Tea.type }
+    temperature { "Boiling" }
+    brew_time { "5 minutes" }
   end
 end
