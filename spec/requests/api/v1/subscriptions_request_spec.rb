@@ -19,4 +19,13 @@ RSpec.describe 'Subscriptions API' do
     expect(response).to be_successful
     expect(Subscription.count).to eq(2)
   end
+
+  it "cancel a customer’s tea subscription" do
+    expect(Subscription.count).to eq(1)
+
+    delete "/api/v1/subscriptions/#{@subscription[:id]}"
+    
+    expect(response).to be_successful
+    expect(Subscription.count).to eq(0)
+  end
 end
