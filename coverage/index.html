@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-05-30T17:24:22-06:00">2023-05-30T17:24:22-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-05-30T17:25:39-06:00">2023-05-30T17:25:39-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -304,7 +304,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#f132802f625f15fb9287ea31eedf4ee9eeafa767" class="src_link" title="spec/requests/api/v1/subscriptions_request_spec.rb">spec/requests/api/v1/subscriptions_request_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">46</td>
+            <td class="cell--number">45</td>
             <td class="cell--number">26</td>
             <td class="cell--number">26</td>
             <td class="cell--number">0</td>
@@ -417,7 +417,7 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -860,7 +860,7 @@
 
             
 
-            <code class="ruby">  enum status: [:active, :cancelled]</code>
+            <code class="ruby">  enum status: %i[active cancelled]</code>
           </li>
         </div>
       
@@ -3084,7 +3084,7 @@
 
             
 
-            <code class="ruby">      resources :subscriptions, only: [:create, :destroy]</code>
+            <code class="ruby">      resources :subscriptions, only: %i[create destroy]</code>
           </li>
         </div>
       
@@ -3888,7 +3888,7 @@
 
             
 
-            <code class="ruby">      subscription = create(:subscription, tea: tea, customer: customer)</code>
+            <code class="ruby">      subscription = create(:subscription, tea:, customer:)</code>
           </li>
         </div>
       
@@ -4280,7 +4280,7 @@
 
             
 
-            <code class="ruby">RSpec.describe &#39;Subscriptions API&#39; do</code>
+            <code class="ruby">RSpec.describe &quot;Subscriptions API&quot; do</code>
           </li>
         </div>
       
@@ -4439,18 +4439,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="21">
-            
-            
-
-            
-
-            <code class="ruby">    # require &#39;pry&#39;; binding.pry</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="22">
+          <li class="covered" data-hits="1" data-linenumber="21">
             <span class="hits">1</span>
             
 
@@ -4461,7 +4450,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="23">
+          <li class="covered" data-hits="1" data-linenumber="22">
             <span class="hits">1</span>
             
 
@@ -4472,7 +4461,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="24">
+          <li class="covered" data-hits="1" data-linenumber="23">
             <span class="hits">1</span>
             
 
@@ -4483,7 +4472,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
+          <li class="covered" data-hits="1" data-linenumber="24">
             <span class="hits">1</span>
             
 
@@ -4494,7 +4483,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="25">
             
             
 
@@ -4505,7 +4494,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="26">
             
             
 
@@ -4516,7 +4505,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="28">
+          <li class="covered" data-hits="1" data-linenumber="27">
             <span class="hits">1</span>
             
 
@@ -4527,7 +4516,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="29">
+          <li class="covered" data-hits="1" data-linenumber="28">
             <span class="hits">1</span>
             
 
@@ -4538,7 +4527,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="30">
+          <li class="covered" data-hits="1" data-linenumber="29">
             <span class="hits">1</span>
             
 
@@ -4549,35 +4538,46 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
-            
-            
-
-            
-
-            <code class="ruby">    </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    post &quot;/api/v1/subscriptions&quot;, params: params</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="33">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    post(&quot;/api/v1/subscriptions&quot;, params:)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="32">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(response).to be_successful</code>
           </li>
         </div>
       
@@ -4588,18 +4588,18 @@
 
             
 
-            <code class="ruby">    expect(response).to be_successful</code>
+            <code class="ruby">    expect(Subscription.count).to eq(2)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="35">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="35">
+            
             
 
             
 
-            <code class="ruby">    expect(Subscription.count).to eq(2)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -4610,23 +4610,12 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="37">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
+          <li class="covered" data-hits="1" data-linenumber="37">
             <span class="hits">1</span>
             
 
@@ -4637,7 +4626,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="39">
+          <li class="covered" data-hits="1" data-linenumber="38">
             <span class="hits">1</span>
             
 
@@ -4648,7 +4637,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
+          <li class="never" data-hits="" data-linenumber="39">
             
             
 
@@ -4659,7 +4648,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="41">
+          <li class="covered" data-hits="1" data-linenumber="40">
             <span class="hits">1</span>
             
 
@@ -4670,18 +4659,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
+          <li class="never" data-hits="" data-linenumber="41">
             
             
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="43">
+          <li class="covered" data-hits="1" data-linenumber="42">
             <span class="hits">1</span>
             
 
@@ -4692,7 +4681,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="44">
+          <li class="covered" data-hits="1" data-linenumber="43">
             <span class="hits">1</span>
             
 
@@ -4703,7 +4692,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="45">
+          <li class="never" data-hits="" data-linenumber="44">
             
             
 
@@ -4714,7 +4703,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="never" data-hits="" data-linenumber="45">
             
             
 
