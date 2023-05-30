@@ -18,6 +18,5 @@ RSpec.describe 'Subscriptions API' do
 
     expect(response).to be_successful
     expect(Subscription.count).to eq(2)
-    require 'pry'; binding.pry
   end
 end
