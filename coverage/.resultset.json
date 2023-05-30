@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/spec/models/tea_spec.rb": {
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/spec/models/subscription_spec.rb": {
         "lines": [
           1,
           null,
@@ -239,9 +239,12 @@
           null
         ]
       },
-      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/models/tea.rb": {
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/models/subscription.rb": {
         "lines": [
           1,
+          1,
+          1,
+          null,
           1,
           1,
           1,
@@ -255,8 +258,29 @@
           1,
           null
         ]
+      },
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/models/customer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/models/tea.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1685481281
+    "timestamp": 1685481458
   }
 }
