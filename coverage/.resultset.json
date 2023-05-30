@@ -367,8 +367,8 @@
           null,
           1,
           null,
-          0,
-          0,
+          1,
+          1,
           null,
           null
         ]
@@ -376,6 +376,10 @@
       "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/controllers/api/v1/subscriptions_controller.rb": {
         "lines": [
           1,
+          1,
+          1,
+          null,
+          null,
           1,
           1,
           null,
@@ -401,6 +405,6 @@
         ]
       }
     },
-    "timestamp": 1685485287
+    "timestamp": 1685485382
   }
 }
