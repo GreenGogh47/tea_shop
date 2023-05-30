@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "factory_bot_rails"
 
 # This file is copied to spec/ when you run 'rails generate rspec:install'

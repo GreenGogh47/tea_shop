@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # MVP is the following
 # subscribe a customer to a tea subscription
 # cancel a customer’s tea subscription
