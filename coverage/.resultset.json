@@ -200,10 +200,10 @@
         "lines": [
           1,
           1,
-          2,
-          2,
-          2,
-          2,
+          3,
+          3,
+          3,
+          3,
           null,
           null
         ]
@@ -214,9 +214,9 @@
           1,
           1,
           1,
-          2,
-          2,
-          2,
+          3,
+          3,
+          3,
           null,
           null
         ]
@@ -225,10 +225,10 @@
         "lines": [
           1,
           1,
-          2,
-          2,
-          2,
-          2,
+          3,
+          3,
+          3,
+          3,
           null,
           null
         ]
@@ -236,8 +236,9 @@
       "/Users/christophercrane/Desktop/mods/4mod/tea_shop/config/routes.rb": {
         "lines": [
           1,
-          null,
-          null,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -336,8 +337,62 @@
           1,
           null
         ]
+      },
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/spec/requests/api/v1/subscriptions_request_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/controllers/api/v1/subscriptions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/serializers/subscription_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1685482350
+    "timestamp": 1685484930
   }
 }

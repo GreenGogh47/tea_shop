@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_30_205729) do
     t.bigint "customer_id", null: false
     t.bigint "tea_id", null: false
     t.string "title"
-    t.decimal "price"
+    t.float "price"
     t.integer "status", default: 0
     t.string "frequency"
     t.datetime "created_at", null: false
