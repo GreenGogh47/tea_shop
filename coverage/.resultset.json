@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/spec/models/subscription_spec.rb": {
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/spec/models/customer_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,11 +9,6 @@
           1,
           2,
           2,
-          2,
-          2,
-          null,
-          null,
-          1,
           2,
           2,
           null,
@@ -200,10 +195,10 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
           null,
           null
         ]
@@ -214,10 +209,9 @@
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
           null,
           null
         ]
@@ -226,10 +220,10 @@
         "lines": [
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          2,
+          2,
+          2,
+          2,
           null,
           null
         ]
@@ -244,12 +238,10 @@
           null
         ]
       },
-      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/models/subscription.rb": {
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/models/customer.rb": {
         "lines": [
           1,
           1,
-          1,
-          null,
           1,
           1,
           1,
@@ -264,14 +256,58 @@
           null
         ]
       },
-      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/models/customer.rb": {
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/spec/models/subscription_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/app/models/subscription.rb": {
         "lines": [
           1,
           1,
+          null,
+          1,
+          1,
+          null,
           1,
           1,
           1,
           1,
+          null
+        ]
+      },
+      "/Users/christophercrane/Desktop/mods/4mod/tea_shop/spec/models/tea_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
           null
         ]
       },
@@ -286,6 +322,6 @@
         ]
       }
     },
-    "timestamp": 1685481629
+    "timestamp": 1685482047
   }
 }

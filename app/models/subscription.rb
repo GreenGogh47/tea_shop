@@ -1,4 +1,6 @@
 class Subscription < ApplicationRecord
+  enum status: [:active, :cancelled]
+
   belongs_to :customer
   belongs_to :tea
 
