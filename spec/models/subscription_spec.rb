@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "rails_helper"
 
 RSpec.describe Subscription, type: :model do
@@ -10,7 +12,7 @@ RSpec.describe Subscription, type: :model do
     it "defaults status to 0 (active)" do
       tea = create(:tea)
       customer = create(:customer)
-      subscription = create(:subscription, tea: tea, customer: customer)
+      subscription = create(:subscription, tea:, customer:)
       expect(subscription.status).to eq("active")
     end
   end

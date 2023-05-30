@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class Subscription < ApplicationRecord
-  enum status: [:active, :cancelled]
+  enum status: %i[active cancelled]
 
   belongs_to :customer
   belongs_to :tea
