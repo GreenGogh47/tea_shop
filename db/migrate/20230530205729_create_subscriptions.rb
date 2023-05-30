@@ -4,7 +4,7 @@ class CreateSubscriptions < ActiveRecord::Migration[7.0]
       t.references :customer, null: false, foreign_key: true
       t.references :tea, null: false, foreign_key: true
       t.string :title
-      t.decimal :price
+      t.float :price
       t.integer :status, default: 0
       t.string :frequency
 
