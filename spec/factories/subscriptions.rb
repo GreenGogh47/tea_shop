@@ -4,8 +4,8 @@ FactoryBot.define do
   factory :subscription do
     customer { nil }
     tea { nil }
-    title { "MyString" }
+    title { "Tea Subscription" }
     price { "9.99" }
-    frequency { "MyString" }
+    frequency { "Monthly" }
   end
 end
