@@ -12,18 +12,30 @@ RSpec.describe "Subscriptions API" do
     @subscription = create(:subscription, customer_id: @customer.id, tea_id: @tea.id)
   end
 
-  it "see all of a customer’s subsciptions (active and cancelled)" do
-    @subscription2 = create(:subscription, customer_id: @customer.id, tea_id: @tea.id, status: "cancelled")
-    get "/api/v1/customers/#{@customer[:id]}/subscriptions"
+  context "#index" do
+    it "see all of a customer’s subsciptions (active and cancelled)" do
+      @subscription2 = create(:subscription, customer_id: @customer.id, tea_id: @tea.id, status: "cancelled")
+      get "/api/v1/customers/#{@customer[:id]}/subscriptions"
 
-    expect(response).to be_successful
-    data = JSON.parse(response.body, symbolize_names: true)[:data]
+      expect(response).to be_successful
+      data = JSON.parse(response.body, symbolize_names: true)[:data]
 
-    expect(data.count).to eq(2)
-    expect(data[0][:id]).to eq(@subscription[:id].to_s)
-    expect(data[0][:attributes][:status]).to eq("active")
-    expect(data[1][:id]).to eq(@subscription2[:id].to_s)
-    expect(data[1][:attributes][:status]).to eq("cancelled")
+      expect(data.count).to eq(2)
+      expect(data[0][:id]).to eq(@subscription[:id].to_s)
+      expect(data[0][:attributes][:status]).to eq("active")
+      expect(data[1][:id]).to eq(@subscription2[:id].to_s)
+      expect(data[1][:attributes][:status]).to eq("cancelled")
+    end
+
+    it "can not find customer (sad path)" do
+      get "/api/v1/customers/100/subscriptions"
+
+      expect(response).to_not be_successful
+      data = JSON.parse(response.body, symbolize_names: true)[:errors][0]
+
+      expect(data[:status]).to eq(400)
+      expect(data[:title]).to eq("Couldn't find Customer with 'id'=100")
+    end
   end
 
   it "subscribe a customer to a tea subscription" do
