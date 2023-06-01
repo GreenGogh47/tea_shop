@@ -30,7 +30,7 @@ RSpec.describe "Subscriptions API" do
     expect(Subscription.count).to eq(1)
     params = { customer_id: @customer.id, tea_id: @tea.id, title: "Monthly", price: 10.00, status: "active", frequency: 1 }
 
-    post("/api/v1/subscriptions", params:)
+    post("/api/v1/customers/#{@customer[:id]}/subscriptions", params:)
 
     expect(response).to be_successful
     expect(Subscription.count).to eq(2)

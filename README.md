@@ -156,7 +156,7 @@ At a minimum, you must create:
 
 ## Database Schema
 
-__ADD SCHEMA PICTURE__
+![image](https://github.com/GreenGogh47/tea_shop/assets/116330317/7202c3d7-20ee-4371-8260-bb1631b98c16)
 
 <br>
 
