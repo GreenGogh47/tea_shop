@@ -12,7 +12,7 @@ RSpec.describe "Subscriptions API" do
     @subscription = create(:subscription, customer_id: @customer.id, tea_id: @tea.id)
   end
 
-  context "#index" do
+  context "subscription#index" do
     it "see all of a customer’s subsciptions (active and cancelled)" do
       @subscription2 = create(:subscription, customer_id: @customer.id, tea_id: @tea.id, status: "cancelled")
       get "/api/v1/customers/#{@customer[:id]}/subscriptions"
@@ -38,14 +38,31 @@ RSpec.describe "Subscriptions API" do
     end
   end
 
-  it "subscribe a customer to a tea subscription" do
-    expect(Subscription.count).to eq(1)
-    params = { customer_id: @customer.id, tea_id: @tea.id, title: "Monthly", price: 10.00, status: "active", frequency: 1 }
+  context "subscription#create" do
+    it "subscribe a customer to a tea subscription" do
+      expect(Subscription.count).to eq(1)
+      params = { customer_id: @customer.id, tea_id: @tea.id, title: "Monthly", price: 10.00, status: "active", frequency: 1 }
 
-    post("/api/v1/customers/#{@customer[:id]}/subscriptions", params:)
+      post("/api/v1/customers/#{@customer[:id]}/subscriptions", params: params)
 
-    expect(response).to be_successful
-    expect(Subscription.count).to eq(2)
+      expect(response).to be_successful
+      expect(Subscription.count).to eq(2)
+    end
+
+    xit "can not find customer (sad path)" do
+      expect(Subscription.count).to eq(1)
+      params = { customer_id: 100, tea_id: @tea.id, title: "Monthly", price: 10.00, status: "active", frequency: 1 }
+
+      post("/api/v1/customers/100/subscriptions", params: params)
+
+      require 'pry'; binding.pry
+
+      expect(response).to_not be_successful
+      data = JSON.parse(response.body, symbolize_names: true)[:errors][0]
+
+      expect(data[:status]).to eq(400)
+      expect(data[:title]).to eq("Couldn't find Customer with 'id'=100")
+    end
   end
 
   it "cancel a customer’s tea subscription" do
