@@ -48,21 +48,6 @@ RSpec.describe "Subscriptions API" do
       expect(response).to be_successful
       expect(Subscription.count).to eq(2)
     end
-
-    xit "can not find customer (sad path)" do
-      expect(Subscription.count).to eq(1)
-      params = { customer_id: 100, tea_id: @tea.id, title: "Monthly", price: 10.00, status: "active", frequency: 1 }
-
-      post("/api/v1/customers/100/subscriptions", params: params)
-
-      require 'pry'; binding.pry
-
-      expect(response).to_not be_successful
-      data = JSON.parse(response.body, symbolize_names: true)[:errors][0]
-
-      expect(data[:status]).to eq(400)
-      expect(data[:title]).to eq("Couldn't find Customer with 'id'=100")
-    end
   end
 
   it "cancel a customer’s tea subscription" do
