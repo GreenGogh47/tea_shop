@@ -69,5 +69,15 @@ RSpec.describe "Subscriptions API" do
       expect(response).to be_successful
       expect(Subscription.last[:status]).to eq("cancelled")
     end
+
+    it "can not find subscription (sad path)" do
+      patch "/api/v1/subscriptions/100"
+
+      expect(response).to_not be_successful
+      data = JSON.parse(response.body, symbolize_names: true)[:errors][0]
+
+      expect(data[:status]).to eq(400)
+      expect(data[:title]).to eq("Couldn't find Subscription with 'id'=100")
+    end
   end
 end
