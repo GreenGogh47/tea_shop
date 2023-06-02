@@ -58,4 +58,16 @@ RSpec.describe "Subscriptions API" do
     expect(response).to be_successful
     expect(Subscription.count).to eq(0)
   end
+
+  context "subscription#update" do
+    it "can cancel a subscription" do
+      expect(@subscription[:status]).to eq("active")
+      params = { status: "cancelled" }
+
+      patch "/api/v1/subscriptions/#{@subscription[:id]}", params: params
+
+      expect(response).to be_successful
+      expect(Subscription.last[:status]).to eq("cancelled")
+    end
+  end
 end
