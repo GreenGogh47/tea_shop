@@ -2,15 +2,6 @@
 
 <div align="center">
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-
-</div>
-
-<div align="center">
-
 # Tea Shop
 
 
@@ -170,31 +161,6 @@ At a minimum, you must create:
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/Medical-Information-Assistant-tea_shop/tea_shop.svg?style=for-the-badge
-
-[contributors-url]: https://https://github.com/GreenGogh47/tea_shop/graphs/contributors
-
-[forks-shield]: https://img.shields.io/github/forks/pantry-wizard/pantry_wizard_be.svg?style=for-the-badge
-
-[forks-url]: https://github.com/pantry-wizard/pantry_wizard_be/network/members
-
-[stars-shield]: https://img.shields.io/github/stars/pantry-wizard/pantry_wizard_be.svg?style=for-the-badge
-
-[stars-url]: https://github.com/pantry-wizard/pantry_wizard_be/stargazers
-
-[issues-shield]: https://img.shields.io/github/issues/pantry-wizard/pantry_wizard_be.svg?style=for-the-badge
-
-[issues-url]: https://github.com/pantry-wizard/pantry_wizard_be/issues
-
-[license-shield]: https://img.shields.io/github/license/pantry-wizard/pantry_wizard_be.svg?style=for-the-badge
-
-[license-url]: https://github.com/pantry-wizard/pantry_wizard_be/blob/master/LICENSE.txt
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-
-[product-screenshot]: images/screenshot.png
 
 [Ruby]: https://img.shields.io/badge/ruby-000000?style=for-the-badge&logo=ruby&logoColor=red
 [Ruby-url]: https://www.ruby-lang.org/en/

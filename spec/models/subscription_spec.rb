@@ -8,6 +8,8 @@ RSpec.describe Subscription, type: :model do
     it { should validate_presence_of(:price) }
     it { should validate_presence_of(:status) }
     it { should validate_presence_of(:frequency) }
+    it { should validate_presence_of(:customer_id) }
+    it { should validate_presence_of(:tea_id)}
 
     it "defaults status to 0 (active)" do
       tea = create(:tea)

@@ -16,6 +16,12 @@ module Api
         render json: SubscriptionSerializer.new(Subscription.destroy(params[:id]))
       end
 
+      def update
+        render json: SubscriptionSerializer.new(Subscription.update(params[:id], subscription_params))
+      end
+
+      private
+
       def subscription_params
         params.permit(:customer_id, :tea_id, :title, :price, :status, :frequency)
       end
